@@ -45,6 +45,10 @@ nav ul{
     justify-content: space-evenly;
 }
 
+#navBurger{
+    display: none;
+}
+
 /*This allows the links in the navbar to have spaces between them.*/
 .listItems{
     margin: 0 0.75em 0 0.75em;
@@ -70,6 +74,18 @@ nav ul{
     flex-direction: column;
     text-align: center;
     color: white;
+}
+
+h2{
+    font-size: 5vw;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+.paraG{
+    font-size: 2vw;
 }
 
 .heroButton{
@@ -122,4 +138,21 @@ footer{
 
 .youAreGrey{
     color: grey;
+}
+
+/**RESPONSIVE SECTION**/
+@media only screen and (max-width: 900px) {
+    header nav ul{
+        display: none;
+    }
+
+    #navBurger{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    #infoFigures{
+        flex-wrap: wrap;
+    }
 }
