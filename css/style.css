@@ -17,3 +17,38 @@ body {
  */
 
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    transition: linear 0.2s;
+    color: orange;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listItems{
+    margin: 0 0.75em 0 0.75em;
+}
+
+#heroSection{
+    height: 100vh;
+    background: url(../img/first-background.jpg);
+    background-size: cover;
+}
+
+
+
+
