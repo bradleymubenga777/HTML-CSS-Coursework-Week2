@@ -20,17 +20,23 @@ body {
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0.55em;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: darkgray;
 }
 
 a:hover{
     transition: linear 0.2s;
     color: orange;
+}
+
+.active{
+    color: rgb(31, 31, 31) !important;
+    font-weight: 550;
 }
 
 nav ul{
@@ -39,16 +45,81 @@ nav ul{
     justify-content: space-evenly;
 }
 
+/*This allows the links in the navbar to have spaces between them.*/
 .listItems{
     margin: 0 0.75em 0 0.75em;
 }
+
+/**HERO SECTION**/
 
 #heroSection{
     height: 100vh;
     background: url(../img/first-background.jpg);
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#heroArticle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
 
+.heroButton{
+    background-color: orange;
+    border: none;
+    padding: 1em;
+    border-radius: 2px;
+}
 
+.heroButton:focus{
+    border: none;
+}
 
+/**INFO SECTION**/
+
+#infoSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+#infoFigures{
+    display: flex;
+    align-self: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: grey 0.1rem inset;
+}
+
+/**FOOTER SECTION**/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footerIcons{
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+#footerIcons figure{
+    padding: 0.5rem;
+    border: 0.05rem black inset;
+    border-radius: 20rem;
+}
+
+.youAreGrey{
+    color: grey;
+}
